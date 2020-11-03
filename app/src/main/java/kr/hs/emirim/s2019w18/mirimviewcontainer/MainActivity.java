@@ -12,10 +12,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flipper);
+        setContentView(R.layout.activity_flipper_auto);
         flipper=findViewById(R.id.flipper);
-        Button btnPrev=findViewById(R.id.btn_prev);
-        Button btnNext=findViewById(R.id.btn_next);
+        Button btnPrev=findViewById(R.id.btn_start);
+        Button btnNext=findViewById(R.id.btn_stop);
         btnPrev.setOnClickListener(btnListener);
         btnNext.setOnClickListener(btnListener);
     }
@@ -24,11 +24,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             switch(view.getId()){
-                case R.id.btn_prev:
-                    flipper.showPrevious();
+                case R.id.btn_start:
+                    flipper.setFlipInterval(1000);
+                    flipper.startFlipping();
+//                    flipper.showPrevious();
                     break;
-                case R.id.btn_next:
-                    flipper.showNext();
+                case R.id.btn_stop:
+                    flipper.stopFlipping();
+//                    flipper.showNext();
                     break;
             }
         }
