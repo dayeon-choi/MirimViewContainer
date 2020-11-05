@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flipper_auto);
+        setContentView(R.layout.activity_flipper);
         flipper=findViewById(R.id.flipper);
         Button btnPrev=findViewById(R.id.btn_start);
         Button btnNext=findViewById(R.id.btn_stop);

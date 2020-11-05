@@ -6,21 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@android:id/tabhost"
-    tools:context=".TabActivityTest">
+    tools:context=".TabActivityTest2">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TabWidget
-            android:id="@android:id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
         <FrameLayout
             android:id="@android:id/tabcontent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <LinearLayout
-                android:id="@+id/linear_one"
+                android:id="@+id/linear_one2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#A36848"
@@ -29,11 +25,11 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:src="@drawable/one"
+                    android:src="@drawable/dog"
                     />
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/linear_two"
+                android:id="@+id/linear_two2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#6F727A"
@@ -42,11 +38,11 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:src="@drawable/two"
+                    android:src="@drawable/cat"
                     />
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/linear_three"
+                android:id="@+id/linear_three2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#F6A773"
@@ -55,10 +51,26 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:src="@drawable/three"
+                    android:src="@drawable/rabbit"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_four2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F6A773"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/horse"
                     />
             </LinearLayout>
         </FrameLayout>
-
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </TabHost>
